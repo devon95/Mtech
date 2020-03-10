@@ -1,0 +1,29 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="list" id="list">Cereal, Bananas, Shampoo, Milk, Rice</div>
+    <div id="name">Firstname Lastname</div>
+    <script>
+        let list = document.getElementById('list').innerText;
+        let split = list.split(" ");
+        let amount = split.length;
+        console.log(list)
+        console.log(split)
+        console.log(amount)
+
+        let name = document.getElementById('name').innerText;
+        let lastName = name.slice(10,19);
+        console.log(name);
+        console.log(lastName);
+        let capital = lastName.toLocaleUpperCase();
+        console.log(capital)
+    </script>
+</body>
+
+</html>

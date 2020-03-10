@@ -1,0 +1,47 @@
+
+@use 'colors'
+
+%flex-column
+    display: flex
+    flex-direction: column
+    
+$font-stack: 'comic-sans', sans-serif
+$font-title: bold
+    
+#page
+    max-width: 700px
+    margin: 0 auto
+body
+    margin: 0
+    font-family: $font-stack
+article 
+    background-color: colors.$body-color
+.img
+    background-image: url("/images/background.jpg")
+    background-position: center bottom
+    background-size: cover
+img 
+    background-image: url("/images/profile-pic.jpg")
+    border-radius: 50%
+    max-width: 300px
+    background-size: cover
+    background-position: center center
+.name
+    @extend %flex-column
+.column-one
+    @extend %flex-column
+    width: 200px
+.column-two
+    @extend %flex-column
+span 
+    font-weight: bold
+    color: colors.$text-color
+ul
+    list-style: none
+    color: colors.$title-color
+    margin-top: 0
+
+    li
+        font-weight: $font-title
+.li 
+

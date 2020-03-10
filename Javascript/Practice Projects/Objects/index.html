@@ -1,0 +1,105 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        let card = {
+            name: 'John Doe',
+            company: 'Mtech',
+            quote: '"This is a nice quote."',
+            position: 'Student',
+            image: 'dog.png',
+            job: 'Full-time Student',
+            pastJobs: 'Mountainland Techinaical College',
+            getName: function(){
+                alert(this.name)
+            }
+
+        }
+        let bussinessCard = function() {
+            this.name = 'John Doe';
+            this.company = function(){
+                alert('Hello World')
+            }
+            
+        }
+    </script>
+    <style>
+        body {
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            width: 500px;
+            height: 300px;
+            background-color: white;
+            border: 5px solid black;
+            position: relative;
+        }
+
+        .format {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #quote {
+            margin-top: 10px;
+            font-family: cursive;
+        }
+        #name {
+            font-size: 30px;
+            font-weight: bold;
+            padding-top: 75px;
+        }
+        #position, #company {
+            font-size: 14px;
+        }
+        .corner {
+            display: flex;
+            flex-direction: column;
+            align-content: flex-end;
+            position: absolute;
+            bottom: 0px;
+        }
+        .rightcorner {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="format">
+            <div id="quote"></div>
+            <div id="name"></div>
+            <div id="position"></div>
+            <div id="company"></div>
+        </div>
+        <div id="image" class="rightcorner"></div>
+        <div class="corner">
+            <div id="job"></div>
+            <div id="pastjobs"></div>
+        </div>
+    </div>
+</body>
+<script>
+    document.getElementById('quote').innerHTML = card.quote
+    document.getElementById('name').innerHTML = card.name
+    document.getElementById('position').innerHTML = card.position
+    document.getElementById('company').innerHTML = card.company
+    document.getElementById('image').innerHTML = card.image
+    document.getElementById('job').innerHTML = card.job
+    document.getElementById('pastjobs').innerHTML = card.pastJobs
+
+</script>
+
+</html>

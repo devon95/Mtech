@@ -1,0 +1,64 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script defer src="main.js"></script>
+    <link defer rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="content">
+        <div>
+            <label for="firstNumber">First, enter the first number</label>
+            <input id="firstNumber" name="firstNumber" type="number">
+            <label for="lastNumber">Second, enter the second number:</label>
+            <input id="secondNumber" name="lastNumber" type="number">
+            <div>Third, select the operator</div>
+            <button id="addition" onclick="addition(firstNumber, secondNumber)">+</button>
+            <button id="subtraction" onclick="subtraction(firstNumber, secondNumber)">-</button>
+            <button id="multiplication" onclick="multiplication(firstNumber, secondNumber)">*</button>
+            <button id="division" onclick="division(firstNumber, secondNumber)">/</button>
+            <div id="results"></div>
+        </div>
+    </div>
+    <!-- <table>
+        <tr>
+            <th colspan="4">Calculator</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <div id="display">Display</div>
+            </td>
+        </tr>
+
+        <tr>
+            <td><button id="seven" value="7">7</button></td>
+            <td><button id="eight" value="8">8</button></td>
+            <td><button id="nine" value="9">9</button></td>
+            <td><button id="divide" value="/">/</button></td>
+        </tr>
+        <tr>
+            <td><button id="four" value="4">4</button></td>
+            <td><button id="five" value="5">5</button></td>
+            <td><button id="six" value="6">6</button></td>
+            <td><button id="multiply" value="*">X</button></td>
+        </tr>
+        <tr>
+            <td><button id="three" value="3">3</button></td>
+            <td><button id="two" value="2">2</button></td>
+            <td><button id="one" value="1">1</button></td>
+            <td><button id="subtract" value="-">-</button></td>
+        </tr>
+        <tr>
+            <td><button id="zero" value="0">0</button></td>
+            <td><button id="decimal" value=".">.</button></td>
+            <td><button id="equals">=</button></td>
+            <td><button id="addition" value="-">+</button></td>
+        </tr>
+    </table> -->
+</body>
+
+</html>

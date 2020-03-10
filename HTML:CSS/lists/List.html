@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lists</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 5px;
+    }
+
+    th {
+      font-family: sans-serif;
+    }
+
+    thead {
+      background-color: black;
+      color: white;
+    }
+
+    caption {
+      padding: 10px;
+    }
+
+    tfoot {
+      background-color: grey;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+<table>
+  <caption>Listing of Employees</caption>
+  <thead>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Title</th>
+    <th>Start Date</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>Brad</td>
+    <td>Miller</td>
+    <td>Developer</td>
+    <td>4/15/2016</td>
+  </tr>
+  <tr>
+    <td>Ben</td>
+    <td>Sanders</td>
+    <td rowspan="2">QA</td>
+    <td>10/1/1999</td>
+  </tr>
+  <tr>
+    <td>Marcia</td>
+    <td>Ball</td>
+    <td>5/10/1981</td>
+  </tr>
+  <tr>
+    <td>Leslie</td>
+    <td>Wooley</td>
+    <td>Project Manager</td>
+    <td>4/11/1993</td>
+  </tr>
+  </tbody>
+  <tfoot>
+  <tr>
+    <td colspan="4">This is a random sentence to structure the table. The longer it is the longer the table gets. I
+      could keep going forever.
+    </td>
+  </tr>
+  </tfoot>
+</table>
+<iframe src="index.html" frameborder="3">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+
+<form method="post">
+  <div>
+    <label>First Name: </label><input name="firstName" type="text" required>
+  </div>
+  <div>
+    <label>Last Name:</label><input name="lastName" type="text" required>
+  </div>
+  <div>
+    <label>Password:</label><input name="password" type="password" required>
+  </div>
+  <div>
+    <label>Email:</label><input name="email" type="email" required>
+  </div>
+  <div>
+    <input type="submit">
+  </div>
+</form>
+</body>
+</html>

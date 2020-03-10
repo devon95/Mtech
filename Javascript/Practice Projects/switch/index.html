@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Switch</title>
+    <style>
+        button {
+            font-size: 30px;
+            background-color: lightskyblue;
+            color: white;
+            text-emphasis: bold;
+        }
+    </style>
+    <script>
+        let today = new Date()
+        let timeOfDay = today.getHours()
+    </script>
+</head>
+
+<body>
+    <input id="time" type="number">
+    <div id="output"></div>
+    <script>
+        function getTimeOfDay() {
+            
+        }
+        switch (timeOfDay) {
+            case timeOfDay < 1100:
+                document.getElementById('output').innerHTML = '<h1>Good Morning</h1>';
+                break;
+            case timeOfDay < 1600:
+                document.getElementById('output').innerHTML = '<h1>Good Afternoon</h1>';
+                break;
+            case timeOfDay < 1800:
+                document.getElementById('output').innerHTML = '<h1>Good Evening</h1>';
+                break;
+            case timeOfDay < 1800:
+                document.getElementById('output').innerHTML = '<h1>Good Night</h1>';
+                break;
+
+            default:
+                break;
+        }
+    </script>
+        <button id="button">This is a button</button>
+</body>
+
+</html>

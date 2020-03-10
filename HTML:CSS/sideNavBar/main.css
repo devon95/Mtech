@@ -1,0 +1,57 @@
+.topnav {
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+a {
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    transition: all .5s;
+}
+a:hover {
+    color: darkred;
+}
+.openbtn {
+    color: white;
+    font-size: 30px;
+    flex-grow: 1;
+    margin-left: 20px;
+
+    visibility: hidden;
+}
+.openbtn span {
+    cursor: pointer;
+}
+#sidenav {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0px;
+    background-color: dodgerblue;
+    transition: all .8s;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+}
+#sidenav a{
+    padding: 8px 32px;
+    font-size: 25px;
+}
+#sidenav a:hover {
+    color: darkred;
+}
+main {
+    position: relative;
+    left: 200px;
+    max-width: calc(100% - 200px);
+}
+@media screen and (max-width: 700px) {
+    .openbtn {
+        visibility: visible;
+    }
+    #sidenav {
+        left: -250px;
+    }
+}

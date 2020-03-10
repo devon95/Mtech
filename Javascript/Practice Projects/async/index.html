@@ -1,0 +1,64 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="array3"></div>
+    <script>
+        function simpAsync(array, callback) {
+            window.setTimeout(
+                function capitalizeFLetter() {
+                    let array1 = array.split(' ');
+                    let newarray1 = []
+                    for (let i = 0; i < array.length; i++) {
+                        callback = newarray1.push(array1[i].charAt(0).toUpperCase() + array1[i].slice(1));
+                        console.log(callback);
+                    }
+                }, Math.random() * 2000 + 1000);
+        }
+
+        function capFirstLetterAsync(array, cb) {
+            setTimeout(() => {
+                for (let i = 0; i < array.length; i++) {
+                    let string = array[i];
+                    string = string[0].toUpperCase() + string.substr(1);
+                    array[i] = string;
+                }
+                cb(array);
+            }, Math.random() * 2000 + 1000);
+        }
+
+        const places = ['china', 'italy', 'france', 'USA', 'canada', 'mexico'];
+
+        capFirstLetterAsync(places, displayArray);
+
+        function displayArray(array) {
+            document.getElementById('array3').innerText = array;
+        }
+
+        function logArray(array) {
+            console.log(array);
+        }
+
+        function capAsync(anArray, callback) {
+            window.setTimeout(function () {
+                callback(
+                    anArray
+                        .toString()
+                        .toUpperCase()
+                        .split(',')
+                );
+            }, Math.random() * 2000 + 1000);
+        }
+        capAsync1(anArray) {
+
+            
+        }
+    </script>
+</body>
+
+</html>

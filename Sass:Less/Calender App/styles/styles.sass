@@ -1,0 +1,39 @@
+@use 'button'
+@use 'color'
+
+%header-stack
+    background-color: color.$background-header
+    text-align: center
+    width: 400px
+    padding: 15px 
+    color: color.$button-text-color
+    border-top-left-radius: 12px
+    border-top-right-radius: 12px
+
+%box
+    background-color: color.$default-color
+    height: 300px
+    margin: 20px
+    text-align: center
+    box-shadow: 4px 3px color.$button-text-color
+    font-size: 20px
+    border-radius: 12px
+body 
+    max-width: 800px
+    margin: 0 auto
+    background-color: color.$background-color
+.flex
+    display: flex
+    flex-direction: row
+.header
+    @extend %header-stack
+button
+    @extend %button-stack
+.box
+    @extend %box
+.button-box
+    background-color: red
+    padding: 10px
+    display: flex
+    justify-content: space-between
+    

@@ -1,0 +1,52 @@
+.column-two, .column-one, .name {
+  display: flex;
+  flex-direction: column;
+}
+
+#page {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0;
+  font-family: "comic-sans", sans-serif;
+}
+
+article {
+  background-color: #CDD5D6;
+}
+
+.img {
+  background-image: url("/images/background.jpg");
+  background-position: center bottom;
+  background-size: cover;
+}
+
+img {
+  background-image: url("/images/profile-pic.jpg");
+  border-radius: 50%;
+  max-width: 300px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.column-one {
+  width: 200px;
+}
+
+span {
+  font-weight: bold;
+  color: #958372;
+}
+
+ul {
+  list-style: none;
+  color: #75969e;
+  margin-top: 0;
+}
+ul li {
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=styles.css.map */
