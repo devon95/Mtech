@@ -1,0 +1,31 @@
+
+#page {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+body {
+    margin: 0 0;
+}
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    color: #000000;
+    background-color: darkgrey;
+    margin-top: 0;
+}
+.logo {
+    max-width: 175px;
+}
+ul li a {
+    color: black;
+    text-decoration: none;
+}
+.hero {
+    background-image: url("images/vidar-nordli-mathisen-yJKb_4vjYwA-unsplash.jpg");
+    padding-bottom: 700px;
+    background-attachment: fixed;
+    background-position: center center;
+}

@@ -1,0 +1,77 @@
+@use 'colors'
+
+%display-flex
+    display: flex
+%menu
+    border-radius: 15px
+    max-width: 250px
+    border-bottom: 1px dotted grey 
+%default-button
+    font-size: 15px
+    font-weight: bold
+    text-transform: capitalize
+    border-radius: 15px
+
+body
+    font-family: sans-serif
+    margin: 0
+    background-color: colors.$background-color
+
+.top-nav
+    @extend %display-flex
+    background-color: colors.$background-color-navbar
+    justify-content: space-between
+
+    div
+        @extend %display-flex
+        margin-left: 200px
+        margin-right: 200px
+
+        ul
+            @extend %display-flex
+            flex-direction: row
+            align-items: center
+
+            li
+                list-style-type: none
+
+            a
+                color: colors.$background-color-default
+                text-decoration: none
+                margin: 5px
+.logo
+    max-width: 100px
+.logo-plus
+    max-width: 75px
+.app
+    max-width: 1500px
+    margin: 0px auto
+.menu
+    @extend %menu
+    div
+        background-color: colors.$background-color-default
+        border-radius: 15px
+        ul 
+            padding:10px 20px
+            li
+                list-style-type: none
+                font-size: 14px
+                a
+                    color: black
+                    text-decoration: none
+                    font-size: 12px
+.button-subscribe
+    @extend %default-button
+    background-color: #F6AE42
+    color: colors.$background-color-default
+.button-sign-up
+    @extend %default-button
+    background-color: #1266CC
+    color: colors.$background-color-default
+.button-log-in
+    @extend %default-button
+    color: #1266cc
+    border: 1px solid #1266cc
+.menu-logo
+    max-width: 75px
+

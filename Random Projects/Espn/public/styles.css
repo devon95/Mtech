@@ -1,0 +1,94 @@
+.top-nav div ul, .top-nav div, .top-nav {
+  display: flex;
+}
+
+.menu {
+  border-radius: 15px;
+  max-width: 250px;
+  border-bottom: 1px dotted grey;
+}
+
+.button-log-in, .button-sign-up, .button-subscribe {
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: capitalize;
+  border-radius: 15px;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #EDEEF0;
+}
+
+.top-nav {
+  background-color: #2B2C2D;
+  justify-content: space-between;
+}
+.top-nav div {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.top-nav div ul {
+  flex-direction: row;
+  align-items: center;
+}
+.top-nav div ul li {
+  list-style-type: none;
+}
+.top-nav div ul a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+.logo-plus {
+  max-width: 75px;
+}
+
+.app {
+  max-width: 1500px;
+  margin: 0px auto;
+}
+
+.menu div {
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+.menu div ul {
+  padding: 10px 20px;
+}
+.menu div ul li {
+  list-style-type: none;
+  font-size: 14px;
+}
+.menu div ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.button-subscribe {
+  background-color: #F6AE42;
+  color: #ffffff;
+}
+
+.button-sign-up {
+  background-color: #1266CC;
+  color: #ffffff;
+}
+
+.button-log-in {
+  color: #1266cc;
+  border: 1px solid #1266cc;
+}
+
+.menu-logo {
+  max-width: 75px;
+}
+
+/*# sourceMappingURL=styles.css.map */
